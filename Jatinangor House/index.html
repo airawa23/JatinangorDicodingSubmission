@@ -18,32 +18,33 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
 
-    <!-- Link SwiperJS script -->
-    <script src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
     <!-- Link custom script -->
-    <script src="JS/script.js"></script>
+    <script src="JS/script.js" defer></script>
 </head>
 
 <body>
-    <header class="navbar-container">
-        <div class="logo">
-            <img src="img/logo_panjang.jpeg" alt="Jatinangor">
-        </div>
-        <nav class="nav-list">
-            <ul>
-                <li><a href="#Beranda">Beranda</a></li>
-                <li><a href="#Tentang">Tentang</a></li>
-                <li><a href="#Menu">Menu</a></li>
-                <li><a href="#Promo">Promo</a></li>
-                <li><a href="#Kontak">Kontak</a></li>
-            </ul>
-        </nav>
+    <div class="jumbotron">
+        <header class="navbar-container">
+            <h1>Jatinangor House</h1>
+            <p>usaha kuliner yang didirikan oleh Azis Ahmad Firman pada tahun 2020 di bawah naungan PT. Tangguh Cipta
+                Rasa.</p>
+    </div>
+    <nav class="nav-list">
+        <ul>
+            <li><a href="#Beranda">Beranda</a></li>
+            <li><a href="#Tentang">Tentang</a></li>
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#Kontak">Kontak</a></li>
+        </ul>
+    </nav>
     </header>
 
     <main>
         <div class="content">
-            <section id="Beranda">
+            
+            <article id="Beranda">
 
                 <div class="content-description">
                     <h1 class="title">Jatinangor House</h1>
@@ -56,12 +57,12 @@
                     <button onclick="location.href='#Tentang'">Selengkapnya</button>
                 </div>
                 <div class="content-img">
-                    <img src="img/homepage.jpeg" />
+                    <img src="img/produk_banyak.jpg" />
                 </div>
 
-            </section>
+            </article>
 
-            <section id="Tentang">
+            <article id="Tentang">
                 <div class="custom-shape-divider-bottom-1731468730">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 119"
                         preserveAspectRatio="none">
@@ -70,7 +71,8 @@
                 </div>
                 <div class="content-description">
                     <h1 class="title">Tentang Kita</h1>
-                    <p>Jatinangor House merupakan restoran ayam goreng milik Aziez Ahmad Firman yang dikelola di bawah
+                    <p>Jatinangor House merupakan restoran ayam goreng milik Aziez Ahmad Firman yang dikelola di
+                        bawah
                         naungan PT Tangguh Cipta Rasa.
 
                         Mulanya, ayam goreng hanyalah salah satu menu di kedai kopi yang masih
@@ -78,93 +80,120 @@
                     </p>
                     <p>
                         Lalu, Jatinangor Coffee sempat membuka cabang di daerah
-                        Pogung Baru, Jogja pada 2020. Saat itu, menu ayam goreng di sana masih dinamai dengan nama yang
+                        Pogung Baru, Jogja pada 2020. Saat itu, menu ayam goreng di sana masih dinamai dengan nama
+                        yang
                         cukup unik, misalnya Ayam Spicy Mirip McD Besar dan Ayam Spicy Mirip McD Kecil.
                     </p>
                 </div>
-                <div class="content-img">
-                    <img src="img/rumah.jpeg" />
+                <div class="profil">
+                    <img src="img/bg2.jpg">
                 </div>
-            </section>
-            <section id="Menu">
+            </article>
+
+            <article id="Menu">
                 <div class="content-description">
                     <h1 class="title">Menu Kita</h1>
-                    <p></p>
-                    <div class="card-container">
-                            <div class="card-list swipper-wrapper">
+                    <p>Temukan berbagai pilihan menu lezat kami yang cocok untuk semua selera, dengan bahan-bahan
+                        berkualitas dan rasa yang memuaskan.</p>
+                </div>
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <ul class="carousel">
 
-                                <div class="card-item swiper-slide">
-                                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/da0913b6-55b9-41b6-b163-5f6440be6ad0_Go-Biz_20211021_215957.jpeg?auto=format"
-                                        alt="" class="food-image" />
-                                    <div class="description">
-                                        <h2 class="product">Paket Ayam Spicy Jatinangor</h2>
-                                        <p class="deskripsi">Nasi + Ayam Spicy Crispy Dada/Paha Atas + Scramble Egg</p>
-                                    </div>
-                                    <h2 class="price">35.500</h2>
-                                </div>
+                        <li class="card">
+                            <div class="img"><img
+                                    src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/da0913b6-55b9-41b6-b163-5f6440be6ad0_Go-Biz_20211021_215957.jpeg?auto=format"
+                                    alt="" draggable="false"></div>
+                            <h2>Paket Ayam Spicy Jatinangor</h2>
+                            <span>Nasi + Ayam Spicy Crispy Dada/Paha Atas + Scramble Egg</span>
+                            <h2 class="price">35.500</h2>
+                        </li>
 
-                                <div class="card-item swiper-slide">
-                                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/10e08c78-3460-43ba-ae0d-6f17b5c171ab_Go-Biz_20211021_220537.jpeg?auto=format"
-                                        alt="" class="food-image" />
-                                    <div class="description">
-                                        <h2>Paket Spicy Chicken Strips Boneless</h2>
-                                        <p>Nasi + 4 Pcs Chicken Strip Spicy + Kailan + Special Sauce + Scramble Egg</p>
-                                    </div>
-                                    <h2 class="price">33.500</h2>
-                                </div>
+                        <li class="card">
+                            <div class="img"><img
+                                    src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/10e08c78-3460-43ba-ae0d-6f17b5c171ab_Go-Biz_20211021_220537.jpeg?auto=format"
+                                    alt="" draggable="false"></div>
+                            <h2>Paket Spicy Chicken Strips Boneless</h2>
+                            <span>Nasi + 4 Pcs Chicken Strip Spicy + Kailan + Special Sauce + Scramble Egg</span>
+                            <h2 class="price">33.500</h2>
+                        </li>
 
-                                <div class="card-item swiper-slide">
-                                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/da0913b6-55b9-41b6-b163-5f6440be6ad0_Go-Biz_20211021_215957.jpeg?auto=format"
-                                        alt="" class="food-image" />
-                                    <div class="description">
-                                        <h2>Paket Ayam Spicy Jatinangor</h2>
-                                        <p>deskripsi</p>
-                                    </div>
-                                    <h2 class="price">Price</h2>
-                                </div>
+                        <li class="card">
+                            <div class="img"><img
+                                    src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/10e08c78-3460-43ba-ae0d-6f17b5c171ab_Go-Biz_20211021_220537.jpeg?auto=format"
+                                    alt="" draggable="false"></div>
+                            <h2>Paket Spicy Chicken Strips Boneless</h2>
+                            <span>Nasi + 4 Pcs Chicken Strip Spicy + Kailan + Special Sauce + Scramble Egg</span>
+                            <h2 class="price">33.500</h2>
+                        </li>
 
-                                <div class="card-item swiper-slide">
-                                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/da0913b6-55b9-41b6-b163-5f6440be6ad0_Go-Biz_20211021_215957.jpeg?auto=format"
-                                        alt="" class="food-image" />
-                                    <div class="description">
-                                        <h2>Paket Ayam Spicy Jatinangor</h2>
-                                        <p>deskripsi</p>
-                                    </div>
-                                    <h2 class="price">Price</h2>
-                                </div>
+                        <li class="card">
+                            <div class="img"><img
+                                    src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/10e08c78-3460-43ba-ae0d-6f17b5c171ab_Go-Biz_20211021_220537.jpeg?auto=format"
+                                    alt="" draggable="false"></div>
+                            <h2>Paket Spicy Chicken Strips Boneless</h2>
+                            <span>Nasi + 4 Pcs Chicken Strip Spicy + Kailan + Special Sauce + Scramble Egg</span>
+                            <h2 class="price">33.500</h2>
+                        </li>
 
-                                <div class="card-item swiper-slide">
-                                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/da0913b6-55b9-41b6-b163-5f6440be6ad0_Go-Biz_20211021_215957.jpeg?auto=format"
-                                        alt="" class="food-image" />
-                                    <div class="description">
-                                        <h2>Paket Ayam Spicy Jatinangor</h2>
-                                        <p>deskripsi</p>
-                                    </div>
-                                    <h2 class="price">Price</h2>
-                                </div>
+                        <li class="card">
+                            <div class="img"><img
+                                    src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/10e08c78-3460-43ba-ae0d-6f17b5c171ab_Go-Biz_20211021_220537.jpeg?auto=format"
+                                    alt="" draggable="false"></div>
+                            <h2>Paket Spicy Chicken Strips Boneless</h2>
+                            <span>Nasi + 4 Pcs Chicken Strip Spicy + Kailan + Special Sauce + Scramble Egg</span>
+                            <h2 class="price">33.500</h2>
+                        </li>
 
-                            </div>
-
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div>
-
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                <aside>
-                    <h1>Profile Pemilik</h1>
-                </aside>
-            </section>
+                        <li class="card">
+                            <div class="img"><img
+                                    src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/10e08c78-3460-43ba-ae0d-6f17b5c171ab_Go-Biz_20211021_220537.jpeg?auto=format"
+                                    alt="" draggable="false"></div>
+                            <h2>Paket Spicy Chicken Strips Boneless</h2>
+                            <span>Nasi + 4 Pcs Chicken Strip Spicy + Kailan + Special Sauce + Scramble Egg</span>
+                            <h2 class="price">33.500</h2>
+                        </li>
+                    </ul>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+            </article>
         </div>
 
+
+        <article id="Kontak">
+            <div class="social-media">
+                <div class="content-description">
+                    <h2>Contact Us</h2>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div>
+
+            <aside>
+                <div class="content">
+                    <div class="image">
+                        <img src="img/rumah.jpeg">
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.3051422201866!2d110.37478967484398!3d-7.757426192261634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59025e051143%3A0x5c2c4c6ce9a8dbb3!2sJatinangor%20House%20Yogyakarta!5e0!3m2!1sid!2sid!4v1732598612289!5m2!1sid!2sid"
+                            width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </aside>
+        </article>
+
     </main>
+
     <footer>
         Copyrights &copy; 2024 Jatinangor House, @miraistra. Dicoding Academy
     </footer>
 
-    <!-- Link SwiperJS Script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
